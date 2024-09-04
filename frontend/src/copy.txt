@@ -1,0 +1,322 @@
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.navbar-container{
+display: flex;
+    
+    position:fixed;
+    top: 25px;
+    left: 0;
+    /* margin: 10px; */
+    width: 100%;
+    height: 8rem;
+border-bottom: 2rem solid rgb(234, 66, 66);
+
+background-color: rgb(79, 77, 77);
+    justify-content: space-between;
+    /* align-items: center; */
+    /* display: flex; */
+    z-index:100;
+
+.iconhome{
+    color: white;
+
+
+   margin-top:20px;
+        width: 2rem;
+       height: 2rem;
+}
+
+.mainicon{
+
+    position:relative;
+    top:-1rem;
+width: 16rem;
+height: 15rem;
+}
+
+
+ .newdrop h1{
+    margin-top:10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position:fixed;
+    top: 0;
+    left: 20%;
+color: black;
+
+}
+.newdrop {
+    width: 100%;
+background-color: rgb(234, 66, 66);
+height:3vh;
+position:fixed;
+    top: 0;
+    left: 0;
+/* opacity: 0.9; */
+}
+.secdrop {
+    width: 100%;
+    background-color: rgb(234, 66, 66);
+
+height: 3vh;
+position:fixed;
+    top: 8.5rem;
+    left: 0rem;
+
+}
+
+.navlinks{
+    list-style-type:none;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+
+    margin-right: 10px;
+
+}
+
+.navlinksmedios{
+    list-style-type:none;
+    display: none;
+
+}
+
+.navlinksmedios li{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.navlinks li{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.navlinks li:hover{
+    color:red;
+
+}
+.menu{
+    display: none;
+width: 2rem;
+height: 2rem;
+margin: 20px;
+color: white;
+
+}
+.cerrar{
+    
+    width: 2rem;
+    height: 2rem;
+
+    display: none;
+    margin: 20px;
+    color: white;
+
+
+}
+.open{
+    display: block;
+}
+.close{display: none;}
+
+
+@media(max-width:800px){
+    .navbar{
+        width: 100%;
+        position:fixed;
+        top: -48.5rem;
+        /* left: 0; */
+    
+justify-content: space-between;
+        height: 4rem;
+  
+    }
+
+    .newdrop {
+        max-width: 100%;
+height: 3vh;
+    }
+
+    .newdrop h1{
+        font-size: 1rem;
+        position:relative;
+        top: 0;
+        left: -5%;
+    color: white;
+        }    
+
+        .menu{
+            display: none;
+   
+        margin: 20px;
+        color:white;
+        }
+        .cerrar .open{
+transition: 0.6s ease;
+
+          
+            display: none;
+            margin: 0px;
+color: white;
+        
+        }
+        .iconhome{   
+             width: 2rem;
+            height: 2rem;
+
+        }
+    }
+   
+
+
+
+@media(max-width:900px)
+{
+    .mainicon{
+
+        position:relative;
+        top:-1rem;
+        left:0rem;
+
+    }
+    .iconhome{
+        display: flex;
+    }
+    .navlinksmedios
+    {
+        display: none;
+    }
+    .navlinks{
+        display: none;
+
+    }
+
+    .navlinks-active{
+    z-index:100;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+display:flex;
+flex-direction: column;
+position: absolute;
+top:50px;
+left:13.5rem;
+opacity: 1;
+list-style-type:none;
+transition: all 0.5s ease;
+background-color: rgb(53, 52, 52);
+border: black solid 2px;
+width: 60%;
+transition: 3s linear;
+gap:2rem;
+border-radius: 5px;
+    }
+    .navlinks-active li{
+    color: white;
+    font-size:1.1rem ;
+
+    }
+    .navlinks-active li:hover{
+     color: red;
+    
+        }
+    .menu{
+        display: block;
+    }
+.close{display: none;}
+
+}
+
+
+@media(max-width:1200px)
+{
+
+
+
+
+
+    .mainicon{
+
+        position:relative;
+        top:-1rem;
+        left:30rem;
+
+    }
+    .iconhome{
+        display: none;
+    }
+
+
+    .navlinksmedios
+        {
+display: flex;
+align-items: center;
+padding-left: 5rem;
+padding-right: 14rem;
+
+gap: 20rem;
+        }
+
+}
+
+@media(max-width:2200px)
+{
+     .open{
+        display: none;
+    }
+    .navlinks-active{
+        display: none;
+    }
+.navlinks {
+    display:flex;
+}
+.navlinksmedios
+{
+display: none;
+}
+
+}
+
+}
+
+
+
+
+
+
+   <div>
+        <Hero/>
+
+<div className='payinfo'>
+
+    <h1>INFORMACION DE PAGO</h1>
+<h2>Debes realizat el pago por alguna de estas opciones y enviar tu comprobante de pago al Whatsapp (33) 42 57 48 52</h2>
+      
+
+       <div className='paycard'>
+        <h2>EXCLUSIVO TRANSFERENCIAS Y CAJERO</h2>
+        <h2>TU NOMBRE EN CONCEPTO DE PAGO</h2>
+
+        <Ul>
+            <li>BANCO: BanBajio</li>
+            <li>Nombre: JOSE DANIEL CERVANTES CORONA</li>
+            <li>NUMERO DE TARJETA:4210030043680177 </li>
+            <li>CLABE: 4210030043680177</li>
+        </Ul>
+
+
+       </div>
+
+</div>
+      <Footer/>
+
+    </div>

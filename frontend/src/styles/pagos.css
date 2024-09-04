@@ -1,0 +1,142 @@
+
+@import 'bootstrap/dist/css/bootstrap.css';
+
+.pagos-container{
+
+
+align-items: center;
+
+width: 100%;
+position: relative;
+
+
+    .payinfo{
+        position: relative;
+        background-color: white;
+        top:10rem;
+
+        height: 45rem;
+        border: solid red 5px;
+        border-radius: 10px;
+        padding: 10px 25px;
+
+    }
+
+    .payinfo h1{
+        background-color: black;
+        color:white;
+     font-weight: 600;
+    }
+
+    .paycard{
+        position: relative;
+
+        padding: 30px 15px;
+        border: 5px solid black;
+    
+
+    }
+    .paycard h2{
+        color:red;
+        text-decoration: underline;
+        font-size: 1.8rem;
+    }
+    .paycard ul{
+        list-style-type: none;
+    }
+
+    .paycard ul li{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+@media(max-width: 3000px){
+
+    .pagos-container{
+        width: 102%;
+    }
+}
+
+@media(max-width: 2500px){
+
+
+    .payinfo{
+        width: 90%;
+        margin:0 0px;
+        left:5%;
+    }
+
+}
+
+
+@media(max-width: 2200px){
+
+    .payinfo{
+        width: 80%;
+        margin:10px 120px;
+left:10%;
+    }
+
+}
+
+@media(max-width: 1900px){
+    .payinfo{
+        width: 80%;
+        margin:10px 60px;
+left:10%;
+    }
+
+ 
+
+
+}
+@media(max-width: 1700px){
+ 
+    .payinfo{
+        width: 85%;
+        margin:0 0px;
+    }
+    
+
+}
+
+
+
+@media(max-width: 1500px){
+ 
+    .payinfo{
+        width: 88%;
+        margin:0 0px;
+    }
+
+}
+
+
+@media(max-width: 1200px){
+  
+    .payinfo{
+        width: 80%;
+        margin:0 0px;
+        font-size: .8rem;
+
+
+    }
+    
+
+}
+
+@media(max-width: 800px){
+.payinfo{
+    width: 75%;
+    margin:0 0px;
+    font-size: .5rem;
+
+}
+
+
+}
+
+}

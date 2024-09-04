@@ -1,0 +1,168 @@
+
+@import 'bootstrap/dist/css/bootstrap.css';
+
+
+/* @keyframes  fade-in {
+    from {scale: 1.2; opacity:0.5;}
+    to{scale:.9;  opacity:1;}
+} */
+
+.hero-container
+{
+display: flex;
+    width: 100%;
+    margin-top:29rem;
+    font-family: "Merriweather", serif;
+
+
+
+
+.mino{
+    display:flex;
+    width: 100%;
+  
+
+
+}
+
+.innerhero{
+
+    position: fixed;
+
+    left:0%;
+    top:-23rem;
+text-align: center;
+}
+
+@media(max-width: 3000px){
+    .mino{
+     
+        width: 113%;
+
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+
+@media(max-width: 2500px){
+    .mino{
+     
+        width: 100%;
+
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+
+@media(max-width: 2200px){
+    .mino{
+     
+        width: 120%;
+
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+@media(max-width: 1900px){
+    .mino{
+     
+        width: 118%;
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+@media(max-width: 1700px){
+    .mino{
+     
+        width: 105%;
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+
+
+
+@media(max-width: 1500px){
+    .mino{
+     
+        width: 100%;
+    }
+
+    .innerhero{
+        position: fixed;
+        ;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+
+
+@media(max-width: 1200px){
+    .mino{
+     
+        width: 100%;
+    }
+
+    .innerhero{
+
+        position: fixed;
+
+
+
+        left:0%;
+        top:5rem;
+
+    }
+
+}
+
+@media(max-width: 800px){
+    .mino{
+     
+        width: 100%;
+    }
+
+    .innerhero{
+        position: fixed;
+
+        left:0%;
+        top:5rem;
+    }
+
+}
+
+
+
+}
